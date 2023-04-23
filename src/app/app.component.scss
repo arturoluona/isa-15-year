@@ -1,4 +1,6 @@
 .bg-sky {
   background-image: url("../assets/sky.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
