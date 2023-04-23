@@ -8,12 +8,13 @@ import {DeviceDetectorService} from "ngx-device-detector";
 })
 export class SectionFirstComponent implements OnInit {
 
+  dateNow: number = new Date().getTime();
+
   stylesDate = `
     font-size: 35px;
     text-align:center;
     color: #FFF;
-    background-color: #231f2087;
-    backdrop-filter: blur(4px);
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
     padding: 13px 20px;
     font-weight: bold;
     min-width:40px;
@@ -25,9 +26,8 @@ export class SectionFirstComponent implements OnInit {
       this.stylesDate = `
         font-size: 25px;
         text-align: center;
+        filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
         color: #FFF;
-        background-color: #231f2087;
-        backdrop-filter: blur(4px);
         padding: 8px 15px;
         font-weight: bold;
         min-width: 20px;

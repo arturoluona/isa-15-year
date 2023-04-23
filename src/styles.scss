@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
 
 * {
-  font-family: 'Delius', cursive;
+  font-family: 'Poltawski Nowy', serif;
 }
 
 .font-family-paris {
   font-family: 'Satisfy', cursive;
+}
+
+.pink-color {
+  color: #f1c2ce;
+}
+
+.bg-sky {
+  background-image: url("assets/giphy.gif");
+  background-repeat: repeat;
 }

@@ -1,17 +1,26 @@
-<div class="bg-section h-full w-full flex flex-col justify-center items-center p-2">
-
-    <h1 class="text-white text-2xl md:text-4xl bg-blur py-2 px-6 font-family-paris">
-      Arturo Luna & Raiza González
-    </h1>
+<div class="bg-section h-full w-full flex flex-col justify-between items-center p-2 py-20">
+  <h3 class="font-semibold tracking-[.4rem] sp text-white drop-shadow-lg shadow-black">
+    MIS XV AÑOS
+  </h3>
+  <h1 class="text-white text-5xl md:text-4xl drop-shadow-lg shadow-black py-2 px-6 font-family-paris">
+    Isabella Valentina
+  </h1>
+  <div class="flex flex-col">
     <div
-      class="mt-10"
       simpleCountdown
-      [dateTo]="1660942800"
+      [endMessage]="'El camino asi es'"
+      [dateTo]="1684555200"
       language="en"
       [styles]="stylesDate"
     ></div>
-    <p class="bg-blur text-white text-base text-center mt-10 py-2 px-5">
-      19/08/2022 5:00pm <br>
-      <span class="text-xs">Viernes</span>
-    </p>
+    <div class="flex justify-between items-center -mt-1">
+      <p class="m-0 text-xs text-white drop-shadow-lg shadow-black text-center w-1/4">Días</p>
+      <p class="m-0 text-xs text-white drop-shadow-lg shadow-black text-center w-1/4">Horas</p>
+      <p class="m-0 text-xs text-white drop-shadow-lg shadow-black text-center w-1/4">Minutos</p>
+      <p class="m-0 text-xs text-white drop-shadow-lg shadow-black text-center w-1/4">Segundos</p>
+    </div>
+  </div>
+  <p class="text-white tracking-[.4rem] text-xl text-center mt-10 py-2 px-5 drop-shadow-lg shadow-black">
+    20 DE MAYO DE 2023
+  </p>
 </div>
