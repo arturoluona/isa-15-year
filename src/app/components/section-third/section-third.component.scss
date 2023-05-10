@@ -5,3 +5,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.bg-blur {
+  background-color: rgba(167, 167, 167, 0.08);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+}

@@ -2,20 +2,20 @@
   <div class="h-screen lg:h-full">
     <app-section-first></app-section-first>
   </div>
-    <div class="h-[calc(100vh+25vh)] lg:h-full">
+    <div >
       <app-section-second></app-section-second>
     </div>
 
-    <div class="h-[calc(100vh+30vh)] lg:h-full">
+    <div>
       <app-section-third></app-section-third>
     </div>
 
-    <div class="h-[calc(100vh+30vh)] lg:h-full">
+    <div  *ngIf="!isFamiliar">
       <app-section-fourth></app-section-fourth>
     </div>
 
-    <div class="h-[calc(100vh+40vh)] lg:h-full">
-      <app-section-fifth></app-section-fifth>
+    <div >
+      <app-section-fifth [isFamiliar]="isFamiliar"></app-section-fifth>
     </div>
 </div>
 

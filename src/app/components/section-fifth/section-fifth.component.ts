@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-section-fifth',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-fifth.component.scss']
 })
 export class SectionFifthComponent implements OnInit {
+  @Input() isFamiliar = false;
 
   constructor() { }
 

@@ -11,7 +11,7 @@ export class SectionFirstComponent implements OnInit {
   dateNow: number = new Date().getTime();
 
   stylesDate = `
-    font-size: 35px;
+    font-size: 45px;
     text-align:center;
     color: #FFF;
     filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
@@ -24,7 +24,7 @@ export class SectionFirstComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) {
     if (deviceService.isMobile()) {
       this.stylesDate = `
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
         filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
         color: #FFF;
