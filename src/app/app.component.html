@@ -1,6 +1,6 @@
 <div class="bg-sky overflow-auto h-screen">
   <div class="h-screen lg:h-full">
-    <app-section-first></app-section-first>
+    <app-section-first [isFamiliar]="isFamiliar"></app-section-first>
   </div>
     <div >
       <app-section-second></app-section-second>
@@ -10,7 +10,7 @@
       <app-section-third></app-section-third>
     </div>
 
-    <div  *ngIf="!isFamiliar">
+    <div *ngIf="!isFamiliar">
       <app-section-fourth></app-section-fourth>
     </div>
 

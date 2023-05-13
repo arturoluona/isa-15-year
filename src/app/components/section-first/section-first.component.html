@@ -7,9 +7,18 @@
   </h1>
   <div class="flex flex-col">
     <div
+      *ngIf="!isFamiliar"
       simpleCountdown
       [endMessage]="'El camino asi es'"
-      [dateTo]="1684555200"
+      [dateTo]="1684627200"
+      language="en"
+      [styles]="stylesDate"
+    ></div>
+    <div
+      *ngIf="isFamiliar"
+      simpleCountdown
+      [endMessage]="'El camino asi es'"
+      [dateTo]="1684184400"
       language="en"
       [styles]="stylesDate"
     ></div>
@@ -21,6 +30,6 @@
     </div>
   </div>
   <p class="text-white tracking-[.4rem] text-xl text-center mt-10 py-2 px-5 drop-shadow-lg shadow-black">
-    20 DE MAYO DE 2023
+    {{isFamiliar ? '15' : '20'}} DE MAYO DE 2023
   </p>
 </div>

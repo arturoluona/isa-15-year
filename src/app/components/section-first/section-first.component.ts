@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {DeviceDetectorService} from "ngx-device-detector";
 
 @Component({
@@ -6,9 +6,8 @@ import {DeviceDetectorService} from "ngx-device-detector";
   templateUrl: './section-first.component.html',
   styleUrls: ['./section-first.component.scss']
 })
-export class SectionFirstComponent implements OnInit {
-
-  dateNow: number = new Date().getTime();
+export class SectionFirstComponent {
+  @Input() isFamiliar = false;
 
   stylesDate = `
     font-size: 45px;
@@ -34,10 +33,6 @@ export class SectionFirstComponent implements OnInit {
         margin:0 1px;
       `
     }
-  }
-
-  ngOnInit(): void {
-
   }
 
 }
